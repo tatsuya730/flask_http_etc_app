@@ -7,6 +7,10 @@
 </head>
 <body>
     <h1>メンバー一覧</h1>
-    <p>{{ members }}</p>
+    <ol>
+        {% for member in members %}
+        <li>{{ member }}</li>
+        {% endfor %}
+    </ol>
 </body>
 </html>
